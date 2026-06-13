@@ -113,11 +113,11 @@ To develop an AI-powered tourist safety system that provides real-time monitorin
 * HTML5
 * CSS3
 * JavaScript
-* React.js / Flutter
+  
 
 ## ⚙️ Backend
 
-* Python (Flask/Django) or Node.js
+* Python
 
 ## 🗄️ Database
 
