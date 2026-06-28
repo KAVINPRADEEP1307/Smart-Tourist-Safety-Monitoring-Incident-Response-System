@@ -65,22 +65,22 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; }
-html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; background: #040d1a; color: #cdd6f4; }
+html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; background: #f0f4ff; color: #1e293b; }
 #MainMenu, footer, header { visibility: hidden; }
 .block-container { padding: 0 !important; max-width: 100% !important; }
 
 /* ═══ APP BG ═══ */
 [data-testid="stAppViewContainer"] {
     background:
-        radial-gradient(ellipse 60% 40% at 15% 0%, rgba(30,90,172,0.18) 0%, transparent 55%),
-        radial-gradient(ellipse 50% 35% at 85% 90%, rgba(16,185,129,0.1) 0%, transparent 55%),
-        #040d1a;
+        radial-gradient(ellipse 60% 40% at 15% 0%, rgba(30,90,255,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 35% at 85% 90%, rgba(16,185,129,0.06) 0%, transparent 55%),
+        #f0f4ff;
 }
 
 /* ═══ SIDEBAR ═══ */
 [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #071428 0%, #040d1a 100%) !important;
-    border-right: 1px solid rgba(30,120,255,0.12) !important;
+    background: linear-gradient(180deg, #f8faff 0%, #f0f4ff 100%) !important;
+    border-right: 1px solid rgba(30,90,255,0.12) !important;
     min-width: 240px !important; max-width: 240px !important;
 }
 [data-testid="stSidebar"] > div { padding: 0 !important; }
@@ -88,7 +88,7 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 .sb-logo {
     display: flex; align-items: center; gap: 10px;
     padding: 1.4rem 1.2rem 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(30,90,255,0.08);
 }
 .sb-logo-icon {
     width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
@@ -97,8 +97,8 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
     font-size: 18px;
     box-shadow: 0 0 16px rgba(30,90,255,0.4);
 }
-.sb-logo-text { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 800; color: #fff; letter-spacing: -0.3px; }
-.sb-logo-sub { font-size: 9.5px; color: #334155; letter-spacing: 1.5px; text-transform: uppercase; }
+.sb-logo-text { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 800; color: #0f172a; letter-spacing: -0.3px; }
+.sb-logo-sub { font-size: 9.5px; color: #94a3b8; letter-spacing: 1.5px; text-transform: uppercase; }
 
 /* GPS live pill */
 .gps-pill {
@@ -118,33 +118,33 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
 
 /* nav section */
-.nav-sec { font-size: 9px; color: #1e3a5f; text-transform: uppercase; letter-spacing: 2px; padding: .6rem 1.2rem .3rem; }
+.nav-sec { font-size: 9px; color: #64748b; text-transform: uppercase; letter-spacing: 2px; padding: .6rem 1.2rem .3rem; }
 
 /* nav buttons */
 .stButton > button {
-    background: transparent !important; color: #4a6080 !important;
+    background: transparent !important; color: #64748b !important;
     border: none !important; border-radius: 10px !important;
     padding: .55rem 1rem !important; font-size: 13px !important;
     font-weight: 500 !important; text-align: left !important;
     width: 100% !important; transition: all .18s ease !important;
 }
-.stButton > button:hover { background: rgba(30,90,255,0.08) !important; color: #7aa2ff !important; transform: translateX(2px) !important; }
+.stButton > button:hover { background: rgba(30,90,255,0.07) !important; color: #1e5aff !important; transform: translateX(2px) !important; }
 .nav-active > .stButton > button {
-    background: linear-gradient(90deg, rgba(30,90,255,0.18), rgba(16,185,129,0.07)) !important;
-    color: #5b9aff !important; border-left: 2px solid #1e5aff !important; font-weight: 700 !important;
+    background: linear-gradient(90deg, rgba(30,90,255,0.1), rgba(16,185,129,0.05)) !important;
+    color: #1e5aff !important; border-left: 2px solid #1e5aff !important; font-weight: 700 !important;
 }
 
 /* lang select in sidebar */
 [data-testid="stSidebar"] .stSelectbox > div > div {
     background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.07) !important;
-    border-radius: 8px !important; color: #4a6080 !important; font-size: 12px !important;
+    border-radius: 8px !important; color: #475569 !important; font-size: 12px !important;
 }
 
 /* ═══ TOPBAR ═══ */
 .topbar {
     display: flex; align-items: center; justify-content: space-between;
     padding: 1rem 2rem;
-    background: rgba(7,20,40,0.8);
+    background: rgba(255,255,255,0.92);
     border-bottom: 1px solid rgba(30,90,255,0.1);
     backdrop-filter: blur(12px);
     position: sticky; top: 0; z-index: 100;
@@ -161,7 +161,7 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 .notif-badge {
     position: relative; cursor: pointer;
     width: 34px; height: 34px; border-radius: 10px;
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(30,90,255,0.12);
     display: flex; align-items: center; justify-content: center; font-size: 15px;
 }
 .notif-count {
@@ -189,44 +189,46 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 /* ═══ PAGE HEADER ═══ */
 .ph { margin-bottom: 1.8rem; }
 .ph-eye { font-size: 10.5px; text-transform: uppercase; letter-spacing: 3px; color: #1e5aff; font-weight: 700; margin-bottom: .4rem; }
-.ph-title { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; color: #fff; letter-spacing: -1px; line-height: 1.1; }
+.ph-title { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; color: #0f172a; letter-spacing: -1px; line-height: 1.1; }
 .ph-title span { background: linear-gradient(90deg, #5b9aff, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.ph-sub { font-size: 13px; color: #4a6080; margin-top: .4rem; }
+.ph-sub { font-size: 13px; color: #64748b; margin-top: .4rem; }
 
 /* ═══ GLASS CARDS ═══ */
 .card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
+    background: #ffffff;
+    border: 1px solid rgba(30,90,255,0.1);
     border-radius: 18px; padding: 1.5rem;
     position: relative; overflow: hidden;
     margin-bottom: 1rem;
+    box-shadow: 0 2px 16px rgba(30,90,255,0.06);
 }
 .card::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(30,90,255,0.4), rgba(16,185,129,0.3), transparent);
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, #1e5aff, #10b981);
 }
-.card-title { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #2d4a70; font-weight: 700; margin-bottom: 1rem; }
+.card-title { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #94a3b8; font-weight: 700; margin-bottom: 1rem; }
 
 /* ═══ STAT CARDS ═══ */
 .stat {
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.06);
+    background: #ffffff;
+    border: 1px solid rgba(30,90,255,0.1);
     border-radius: 16px; padding: 1.3rem 1.5rem;
     position: relative; overflow: hidden;
+    box-shadow: 0 2px 12px rgba(30,90,255,0.06);
 }
 .stat-bar { height: 2px; border-radius: 2px; margin-bottom: 1rem; }
-.stat-icon { position: absolute; right: 1rem; top: 1rem; font-size: 28px; opacity: .1; }
-.stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #2d4a70; margin-bottom: .35rem; }
-.stat-val { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: #f0f4ff; line-height: 1; }
-.stat-sub { font-size: 11px; color: #2d4a70; margin-top: .35rem; }
+.stat-icon { position: absolute; right: 1rem; top: 1rem; font-size: 28px; opacity: .12; }
+.stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #94a3b8; margin-bottom: .35rem; }
+.stat-val { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: #0f172a; line-height: 1; }
+.stat-sub { font-size: 11px; color: #94a3b8; margin-top: .35rem; }
 
 /* ═══ INPUTS ═══ */
 .stTextInput > div > div > input,
 .stTextArea > div > div > textarea,
 .stNumberInput > div > div > input {
-    background: rgba(255,255,255,0.04) !important;
-    border: 1px solid rgba(255,255,255,0.09) !important;
-    border-radius: 11px !important; color: #cdd6f4 !important;
+    background: #f8faff !important;
+    border: 1px solid rgba(30,90,255,0.15) !important;
+    border-radius: 11px !important; color: #1e293b !important;
     font-size: 13.5px !important; padding: .7rem 1rem !important;
     font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
@@ -240,9 +242,9 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
     font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 1px !important;
 }
 .stSelectbox > div > div {
-    background: rgba(255,255,255,0.04) !important;
-    border: 1px solid rgba(255,255,255,0.09) !important;
-    border-radius: 11px !important; color: #cdd6f4 !important;
+    background: #f8faff !important;
+    border: 1px solid rgba(30,90,255,0.15) !important;
+    border-radius: 11px !important; color: #1e293b !important;
 }
 
 /* ═══ PRIMARY BUTTON ═══ */
@@ -283,10 +285,10 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 }
 
 /* ═══ COORD BOX ═══ */
-.cbox { background: rgba(0,0,0,0.3); border: 1px solid rgba(30,90,255,0.15); border-radius: 12px; overflow: hidden; }
-.crow { display: flex; justify-content: space-between; align-items: center; padding: .65rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.cbox { background: #f1f5f9; border: 1px solid rgba(30,90,255,0.15); border-radius: 12px; overflow: hidden; }
+.crow { display: flex; justify-content: space-between; align-items: center; padding: .65rem 1rem; border-bottom: 1px solid #e2e8f0; }
 .crow:last-child { border-bottom: none; }
-.ck { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #2d4a70; }
+.ck { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #64748b; }
 .cv { font-family: 'Syne', sans-serif; font-size: 13.5px; font-weight: 700; color: #5b9aff; }
 
 /* ═══ RISK BAR ═══ */
@@ -296,36 +298,36 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 /* ═══ NOTIF PANEL ═══ */
 .notif-item {
     display: flex; gap: 12px; padding: .9rem 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    background: rgba(255,255,255,0.02); border-radius: 10px; margin-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f8faff; border-radius: 10px; margin-bottom: 6px;
 }
 .notif-item.unread { background: rgba(30,90,255,0.07); border: 1px solid rgba(30,90,255,0.12); }
 .notif-icon { font-size: 20px; flex-shrink: 0; }
 .notif-msg { font-size: 13px; color: #94a3b8; line-height: 1.4; }
-.notif-time { font-size: 11px; color: #2d4a70; margin-top: 2px; }
+.notif-time { font-size: 11px; color: #64748b; margin-top: 2px; }
 
 /* ═══ INCIDENT HISTORY ═══ */
 .inc-row {
     display: flex; align-items: center; gap: 12px;
     padding: .8rem 1rem; border-radius: 10px; margin-bottom: 5px;
-    background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
+    background: #f8faff; border: 1px solid rgba(30,90,255,0.08);
 }
 .inc-icon { font-size: 18px; }
 .inc-title { font-size: 13px; color: #94a3b8; font-weight: 600; }
-.inc-sub { font-size: 11px; color: #2d4a70; }
+.inc-sub { font-size: 11px; color: #64748b; }
 
 /* ═══ QUICK CALL CARD ═══ */
 .qcall {
     display: flex; align-items: center; justify-content: space-between;
     padding: .9rem 1.1rem; border-radius: 12px; margin-bottom: .5rem;
-    border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(30,90,255,0.1); background: #f8faff;
     transition: border-color .2s;
 }
 .qcall:hover { border-color: rgba(30,90,255,0.3); }
 .qcall-left { display: flex; align-items: center; gap: 10px; }
 .qcall-icon { font-size: 22px; }
 .qcall-name { font-size: 13px; color: #94a3b8; font-weight: 600; }
-.qcall-num  { font-size: 11px; color: #2d4a70; }
+.qcall-num  { font-size: 11px; color: #64748b; }
 .qcall-btn {
     background: linear-gradient(135deg, #1e5aff, #10b981);
     color: #fff; border: none; border-radius: 8px; padding: .4rem .9rem;
@@ -341,7 +343,7 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 .wx-card.danger{ background: rgba(239,68,68,.07); border-color: rgba(239,68,68,.2); }
 .wx-card.ok   { background: rgba(16,185,129,.07); border-color: rgba(16,185,129,.2); }
 .wx-icon { font-size: 28px; }
-.wx-title { font-size: 13px; font-weight: 700; color: #f0f4ff; }
+.wx-title { font-size: 13px; font-weight: 700; color: #0f172a; }
 .wx-sub { font-size: 11.5px; color: #64748b; }
 
 /* ═══ STATUS BADGES ═══ */
@@ -355,8 +357,8 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
     min-height: 92vh; display: flex; align-items: center; justify-content: center;
 }
 .login-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: #ffffff;
+    border: 1px solid rgba(30,90,255,0.12);
     border-radius: 24px; padding: 2.5rem 2.2rem;
     width: 100%; max-width: 420px; position: relative; overflow: hidden;
 }
@@ -391,7 +393,7 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 [data-testid="stSlider"] { padding: 0 !important; }
 
 /* toggle */
-.stToggle label { color: #4a6080 !important; font-size: 13px !important; }
+.stToggle label { color: #475569 !important; font-size: 13px !important; }
 
 .divline { height:1px; background:linear-gradient(90deg,transparent,rgba(30,90,255,0.15),transparent); margin:.6rem 0; }
 </style>
@@ -444,7 +446,7 @@ def haversine(la1,lo1,la2,lo2):
     return R*2*math.atan2(math.sqrt(a),math.sqrt(1-a))
 
 def map_embed(lat,lon,label=""):
-    return f'<iframe width="100%" height="300" style="border:0;border-radius:14px;" loading="lazy" src="https://maps.google.com/maps?q={lat},{lon}&z=16&output=embed"></iframe><div style="font-size:11px;color:#2d4a70;text-align:center;margin-top:.3rem">📍 {label} {lat:.6f}, {lon:.6f}</div>'
+    return f'<iframe width="100%" height="300" style="border:0;border-radius:14px;" loading="lazy" src="https://maps.google.com/maps?q={lat},{lon}&z=16&output=embed"></iframe><div style="font-size:11px;color:#64748b;text-align:center;margin-top:.3rem">📍 {label} {lat:.6f}, {lon:.6f}</div>'
 
 def stat_card(col, bar_color, icon, label, value, sub):
     with col:
@@ -532,7 +534,7 @@ if st.session_state.logged_in:
     init   = uname[0].upper() if uname else "U"
     tb_c1, tb_c2, tb_c3, tb_c4 = st.columns([3, 1, 1, 1])
     with tb_c1:
-        st.markdown(f'<div style="padding:.6rem 0"><span style="font-size:20px;font-family:Syne,sans-serif;font-weight:800;color:#fff;">🛡️ SafeTrail</span><span style="font-size:11px;color:#2d4a70;margin-left:10px;">/ {page}</span></div>', unsafe_allow_html=True)
+        st.markdown(f'<div style="padding:.6rem 0"><span style="font-size:20px;font-family:Syne,sans-serif;font-weight:800;color:#0f172a;">🛡️ SafeTrail</span><span style="font-size:11px;color:#94a3b8;margin-left:10px;">/ {page}</span></div>', unsafe_allow_html=True)
     with tb_c2:
         # Language quick toggle shown in topbar too
         st.markdown(f'<div style="padding:.5rem 0;text-align:right;font-size:11px;color:#2d4a70">🌐 {st.session_state.lang}</div>', unsafe_allow_html=True)
@@ -632,7 +634,7 @@ if page == "Login":
 
         st.markdown('</div>', unsafe_allow_html=True)
         if not st.session_state.gps_granted:
-            st.markdown('<div style="text-align:center;margin-top:.8rem;font-size:12px;color:#1e3a5f;border:1px solid rgba(30,90,255,.15);border-radius:10px;padding:.7rem;background:rgba(30,90,255,.05)">📡 Allow location access for GPS tracking</div>', unsafe_allow_html=True)
+            st.markdown('<div style="text-align:center;margin-top:.8rem;font-size:12px;color:#64748b;border:1px solid rgba(30,90,255,.15);border-radius:10px;padding:.7rem;background:rgba(30,90,255,.04)">📡 Allow location access for GPS tracking</div>', unsafe_allow_html=True)
         st.markdown('</div></div>', unsafe_allow_html=True)
 
 
@@ -659,7 +661,7 @@ elif page == "Dashboard":
         if lat and lon:
             st.markdown(map_embed(lat,lon,f"{uname} —"), unsafe_allow_html=True)
         else:
-            st.markdown('<div style="height:200px;display:flex;align-items:center;justify-content:center;color:#2d4a70;font-size:13px;flex-direction:column;gap:8px"><div style="font-size:36px">📡</div>Allow location access in your browser</div>', unsafe_allow_html=True)
+            st.markdown('<div style="height:200px;display:flex;align-items:center;justify-content:center;color:#64748b;font-size:13px;flex-direction:column;gap:8px"><div style="font-size:36px">📡</div>Allow location access in your browser</div>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
         # Recent incidents
@@ -670,7 +672,7 @@ elif page == "Dashboard":
                 col_s = "#10b981" if "Minor" in sev else "#fbbf24" if "Moderate" in sev else "#f87171"
                 st.markdown(f'<div class="inc-row"><div class="inc-icon">📋</div><div><div class="inc-title">{inc["desc"][:50]}…</div><div class="inc-sub">{inc["time"]} · <span style="color:{col_s}">{sev}</span> · {inc.get("gps","N/A")}</div></div></div>', unsafe_allow_html=True)
         else:
-            st.markdown('<div style="color:#2d4a70;font-size:13px;padding:.5rem">No incidents recorded yet.</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#64748b;font-size:13px;padding:.5rem">No incidents recorded yet.</div>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
     with c2:
@@ -678,10 +680,10 @@ elif page == "Dashboard":
         st.markdown('<div class="card"><div class="card-title">📐 Your Coordinates</div>', unsafe_allow_html=True)
         if lat:
             st.markdown(f'''<div class="cbox">
-              <div class="crow"><span class="ck">Latitude</span><span class="cv">{lat:.7f}°</span></div>
-              <div class="crow"><span class="ck">Longitude</span><span class="cv">{lon:.7f}°</span></div>
-              <div class="crow"><span class="ck">Accuracy</span><span class="cv">±{acc:.0f} m</span></div>
-              <div class="crow"><span class="ck">User</span><span class="cv">{uname}</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Latitude</span><span class="cv">{lat:.7f}°</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Longitude</span><span class="cv">{lon:.7f}°</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Accuracy</span><span class="cv">±{acc:.0f} m</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">User</span><span class="cv">{uname}</span></div>
             </div>
             <a href="https://www.google.com/maps?q={lat},{lon}" target="_blank" style="display:block;margin-top:.8rem;text-align:center;font-size:12px;color:#5b9aff;padding:.5rem;background:rgba(30,90,255,.08);border-radius:9px;border:1px solid rgba(30,90,255,.15);text-decoration:none">🔗 Open in Google Maps ↗</a>''', unsafe_allow_html=True)
         else:
@@ -700,9 +702,9 @@ elif page == "Dashboard":
         # Device status
         st.markdown('<div class="card"><div class="card-title">📱 Device Status</div>', unsafe_allow_html=True)
         st.markdown('''<div class="cbox">
-          <div class="crow"><span class="ck">🔋 Battery</span><span class="cv" style="color:#f87171">18% ⚠️</span></div>
-          <div class="crow"><span class="ck">📶 Network</span><span class="cv" style="color:#10b981">4G Strong</span></div>
-          <div class="crow"><span class="ck">📡 GPS</span><span class="cv" style="color:#10b981">Active</span></div>
+          <div class="crow"><span class="ck" style="color:#64748b">🔋 Battery</span><span class="cv" style="color:#f87171">18% ⚠️</span></div>
+          <div class="crow"><span class="ck" style="color:#64748b">📶 Network</span><span class="cv" style="color:#10b981">4G Strong</span></div>
+          <div class="crow"><span class="ck" style="color:#64748b">📡 GPS</span><span class="cv" style="color:#10b981">Active</span></div>
         </div>''', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -725,10 +727,10 @@ elif page == "Geo-Fencing":
         if lat and lon:
             dist = haversine(lat,lon,zla,zlo)
             st.markdown(f'''<div class="card"><div class="cbox">
-              <div class="crow"><span class="ck">Your Position</span><span class="cv" style="font-size:12px">{lat:.5f}, {lon:.5f}</span></div>
-              <div class="crow"><span class="ck">Zone Centre</span><span class="cv" style="font-size:12px">{zla:.5f}, {zlo:.5f}</span></div>
-              <div class="crow"><span class="ck">Distance</span><span class="cv">{dist:.1f} m</span></div>
-              <div class="crow"><span class="ck">Radius Limit</span><span class="cv">{rad} m</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Your Position</span><span class="cv" style="font-size:12px">{lat:.5f}, {lon:.5f}</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Zone Centre</span><span class="cv" style="font-size:12px">{zla:.5f}, {zlo:.5f}</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Distance</span><span class="cv">{dist:.1f} m</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Radius Limit</span><span class="cv">{rad} m</span></div>
             </div></div>''', unsafe_allow_html=True)
 
     with c2:
@@ -737,15 +739,15 @@ elif page == "Geo-Fencing":
             dist = haversine(lat,lon,zla,zlo)
             inside = dist <= rad
             if inside:
-                st.markdown(f'<div class="gf-status" style="border:1px solid rgba(16,185,129,.2);background:rgba(16,185,129,.05)"><div style="font-size:54px">✅</div><div style="font-family:Syne,sans-serif;font-size:22px;font-weight:800;color:#10b981;margin:.5rem 0">{st.session_state.username} — {t("safe")}</div><div style="color:#2d4a70;font-size:13px">Distance: <strong style="color:#10b981">{dist:.1f} m</strong> within {rad} m limit</div></div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="gf-status" style="border:1px solid rgba(16,185,129,.2);background:rgba(16,185,129,.05)"><div style="font-size:54px">✅</div><div style="font-family:Syne,sans-serif;font-size:22px;font-weight:800;color:#10b981;margin:.5rem 0">{st.session_state.username} — {t("safe")}</div><div style="color:#64748b;font-size:13px">Distance: <strong style="color:#10b981">{dist:.1f} m</strong> within {rad} m limit</div></div>', unsafe_allow_html=True)
                 st.success("✅ Boundary check passed.")
             else:
-                st.markdown(f'<div class="gf-status" style="border:1px solid rgba(239,68,68,.2);background:rgba(239,68,68,.05)"><div style="font-size:54px">🚨</div><div style="font-family:Syne,sans-serif;font-size:22px;font-weight:800;color:#f87171;margin:.5rem 0">{st.session_state.username} — {t("danger")}</div><div style="color:#2d4a70;font-size:13px">Exceeded by <strong style="color:#f87171">{dist-rad:.1f} m</strong> — response unit alerted!</div></div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="gf-status" style="border:1px solid rgba(239,68,68,.2);background:rgba(239,68,68,.05)"><div style="font-size:54px">🚨</div><div style="font-family:Syne,sans-serif;font-size:22px;font-weight:800;color:#f87171;margin:.5rem 0">{st.session_state.username} — {t("danger")}</div><div style="color:#64748b;font-size:13px">Exceeded by <strong style="color:#f87171">{dist-rad:.1f} m</strong> — response unit alerted!</div></div>', unsafe_allow_html=True)
                 st.error("⚠️ Geo-fence breach! Emergency protocol activated.")
             st.markdown("<br>", unsafe_allow_html=True)
             st.markdown(map_embed(lat, lon, st.session_state.username), unsafe_allow_html=True)
         else:
-            st.markdown('<div style="height:280px;display:flex;align-items:center;justify-content:center;color:#2d4a70;flex-direction:column;gap:8px"><div style="font-size:36px">📡</div>Waiting for live GPS signal…</div>', unsafe_allow_html=True)
+            st.markdown('<div style="height:280px;display:flex;align-items:center;justify-content:center;color:#64748b;flex-direction:column;gap:8px"><div style="font-size:36px">📡</div>Waiting for live GPS signal…</div>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -764,7 +766,7 @@ elif page == "SOS Emergency":
         note  = st.text_area("Situation Details", placeholder="Describe briefly…", height=70)
 
         if lat:
-            st.markdown(f'<div class="cbox" style="margin-top:.7rem"><div class="crow"><span class="ck">📍 GPS Auto-Attached</span><span class="cv" style="font-size:12px">{lat:.6f}, {lon:.6f}</span></div><div class="crow"><span class="ck">Accuracy</span><span class="cv">±{st.session_state.accuracy:.0f} m</span></div></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="cbox" style="margin-top:.7rem"><div class="crow"><span class="ck" style="color:#64748b">📍 GPS Auto-Attached</span><span class="cv" style="font-size:12px">{lat:.6f}, {lon:.6f}</span></div><div class="crow"><span class="ck" style="color:#64748b">Accuracy</span><span class="cv">±{st.session_state.accuracy:.0f} m</span></div></div>', unsafe_allow_html=True)
         else:
             st.warning("⚠️ Enable GPS for precise location tracking")
 
@@ -860,7 +862,7 @@ elif page == "Incident Report":
         severity = st.selectbox("Severity", ["🟢 Minor","🟡 Moderate","🔴 Critical"])
         incident_desc = st.text_area("Incident Description", placeholder="What happened?", height=100)
         if lat:
-            st.markdown(f'<div class="cbox" style="margin:.6rem 0"><div class="crow"><span class="ck">📍 GPS Tag</span><span class="cv" style="font-size:12px">{lat:.6f}, {lon:.6f}</span></div></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="cbox" style="margin:.6rem 0"><div class="crow"><span class="ck" style="color:#64748b">📍 GPS Tag</span><span class="cv" style="font-size:12px">{lat:.6f}, {lon:.6f}</span></div></div>', unsafe_allow_html=True)
 
         col_sub, col_dl = st.columns(2)
         with col_sub:
@@ -909,7 +911,7 @@ elif page == "Incident Report":
                 sev_col = "#10b981" if "Minor" in inc['severity'] else "#fbbf24" if "Moderate" in inc['severity'] else "#f87171"
                 st.markdown(f'<div class="inc-row"><div class="inc-icon">📋</div><div><div class="inc-title">{inc["desc"][:45]}…</div><div class="inc-sub">{inc["time"]} · <span style="color:{sev_col}">{inc["severity"]}</span></div></div></div>', unsafe_allow_html=True)
         else:
-            st.markdown('<div style="color:#2d4a70;font-size:13px">No reports yet.</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#64748b;font-size:13px">No reports yet.</div>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -1030,10 +1032,10 @@ elif page == "Admin":
         st.markdown('</div>', unsafe_allow_html=True)
         if lat:
             st.markdown(f'''<div class="cbox" style="margin-top:1rem">
-              <div class="crow"><span class="ck">User</span><span class="cv" style="font-size:12px">{st.session_state.username}</span></div>
-              <div class="crow"><span class="ck">Lat</span><span class="cv" style="font-size:12px">{lat:.6f}°</span></div>
-              <div class="crow"><span class="ck">Lon</span><span class="cv" style="font-size:12px">{st.session_state.lon:.6f}°</span></div>
-              <div class="crow"><span class="ck">Accuracy</span><span class="cv" style="font-size:12px">±{st.session_state.accuracy:.0f} m</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">User</span><span class="cv" style="font-size:12px">{st.session_state.username}</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Lat</span><span class="cv" style="font-size:12px">{lat:.6f}°</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Lon</span><span class="cv" style="font-size:12px">{st.session_state.lon:.6f}°</span></div>
+              <div class="crow"><span class="ck" style="color:#64748b">Accuracy</span><span class="cv" style="font-size:12px">±{st.session_state.accuracy:.0f} m</span></div>
             </div>''', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
