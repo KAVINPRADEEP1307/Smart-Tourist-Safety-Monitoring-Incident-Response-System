@@ -393,7 +393,12 @@ html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; backg
 [data-testid="stSlider"] { padding: 0 !important; }
 
 /* toggle */
-.stToggle label { color: #475569 !important; font-size: 13px !important; }
+.stToggle { background: #ffffff !important; border-radius: 10px !important; padding: .4rem .6rem !important; }
+.stToggle label { color: #000000 !important; font-size: 13px !important; font-weight: 600 !important; }
+.stToggle p { color: #000000 !important; font-weight: 600 !important; }
+[data-testid="stToggle"] { background: #ffffff !important; border-radius: 10px !important; padding: .3rem .5rem !important; }
+[data-testid="stToggle"] label { color: #000000 !important; font-size: 13px !important; font-weight: 600 !important; }
+[data-testid="stToggle"] span { color: #000000 !important; font-weight: 600 !important; }
 
 .divline { height:1px; background:linear-gradient(90deg,transparent,rgba(30,90,255,0.15),transparent); margin:.6rem 0; }
 </style>
