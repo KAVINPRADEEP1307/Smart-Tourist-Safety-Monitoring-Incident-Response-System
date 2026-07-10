@@ -176,6 +176,10 @@ To develop an AI-powered tourist safety system that provides real-time monitorin
 ## project demo link
 app link:https://smart-tourist-safety-monitoring-incident-response-system-joahd.streamlit.app/
 
+## project explanation vedio 
+https://drive.google.com/file/d/1WSVAo0v3faVDasHBWZ7YzBLRP6ZHRoDR/view?usp=drivesdk
+
+
 
 
 
