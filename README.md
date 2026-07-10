@@ -146,7 +146,7 @@ To develop an AI-powered tourist safety system that provides real-time monitorin
 
 ## 🛠️ Development Tools
 
-* VS Code
+* Streamlit 
 * Git
 * GitHub
 * Postman
